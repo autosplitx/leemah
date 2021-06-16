@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/utility.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Leemah | Home</title>
+</head>
+
+<body>
+  <section class="promo-off flex">
+    <div class="promo"><a href="#">N6 off</a></div>
+    <div class="promo"><a href="#">N15 off</a></div>
+    <div class="promo"><a href="#">N25 off</a></div>
+  </section>
+
+  <header class="header">
+    <div class="top flex">
+      <div class="logo">
+        <i class="fa fa-bars closed"></i>
+        <!-- <i class="material-icons">menu</i> -->
+        <a href="index.html">Leemah<span class="text-danger">shop</span></a>
+      </div>
+      <div class="icon">
+        <a href="./views/account.html">
+          <i class="fa fa-user"></i>
+          <!-- <i class="material-icons">person</i> -->
+        </a>
+        <i class="fa fa-search"></i>
+        <!-- <i class="material-icons">search</i> -->
+
+        <span class="counter">
+          <i class="fa fa-shopping-bag"></i>
+           <!-- <i class="material-icons">shopping_bag</i> -->
+          <span>5</span>
+        </span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="top-head">
+        <ul class="flex text-center">
+          <li data-tab-target="#womenT" class="active">Women</li>
+          <li data-tab-target="#curvyT">Curvy</li>
+          <li data-tab-target="#menT">Men</li>
+        </ul>
+      </div>
+    </div>
+
+    <nav>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times closed"></i>
+        <div class="clear"></div>
+        <div class="side-bar">
+          <ul class="flex text-center">
+            <li data-tab-target="#womenS" class="active">Women</li>
+            <li data-tab-target="#menS">Men</li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+          <div id="womenS" data-tab-content class="active">
+            <h3>Women</h3>
+            <ul>
+              <li><a href="#clothings">Clothings</a></li>
+              <li><a href="#plus">Plus Size</a></li>
+            </ul>
+          </div>
+          <div id="menS" data-tab-content>
+            <h3>Men</h3>
+            <ul>
+              <li><a href="#clothings">Clothings</a></li>
+              <li><a href="#shoes">Shoes</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="tab-content">
+    <div id="womenT" data-tab-content class="active">
+      <div class="banner-women"></div>
+
+      <section class="category grid grid-4">
+        <div class="category-box card">
+          <a href="./views/category.html">
+            <img src="./images/chic/tops.webp" alt="">
+            <p>Tops</p>
+          </a>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/bottoms.webp" alt="">
+          <p>Bottoms</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/dresses.webp" alt="">
+          <p>Dresses</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/lingerie.webp" alt="">
+          <p>Lingerie</p>
+        </div>
+
+        <div class="category-box card">
+          <img src="./images/chic/shoes.webp" alt="">
+          <p>Shoes</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/bags.webp" alt="">
+          <p>Bags</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/accessories.webp" alt="">
+          <p>Acc & Beauty</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/home.webp" alt="">
+          <p>Home</p>
+        </div>
+      </section>
+
+      <main class="container">
+        <!-- <sectio  n class="coupon">
+          <img src="./images/coupons.jpg" width="100%" alt="">
+        </section> -->
+
+        <section class="arrival grid">
+          <div class="new-arrival grid">
+            <div>
+              <h1>New Arrival</h1>
+              <p>Summer Collection</p>
+            </div>
+            <div class="side-img">
+              <img src="./images/new-arrival.jpg" alt="">
+              <p>N20</p>
+            </div>
+          </div>
+          <div class="new-arrival grid">
+            <div>
+              <h1>Best Sellers</h1>
+              <p>From only N3.4</p>
+            </div>
+            <div class="side-img">
+              <img src="./images/best-sellers.jpg" alt="">
+              <p>N50</p>
+            </div>
+          </div>
+          <div class="new-arrival grid">
+            <div>
+              <h1>Flash Deals</h1>
+              <p>Down to N0.99</p>
+            </div>
+            <div class="side-img">
+              <img src="./images/flash-deals.jpg" alt="">
+              <p>N60</p>
+            </div>
+          </div>
+          <div class="new-arrival grid">
+            <div>
+              <h1>Clearance</h1>
+              <p>Up to 40% OFF</p>
+            </div>
+            <div class="side-img">
+              <img src="./images/clearance.jpg" alt="">
+              <p>N40</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="gracila">
+          <img src="./images/chic/gracila.jpg" width="100%" alt="">
+        </section>
+
+        <section class="option flex">
+          <div><img src="./images/chic/next1.jpg" alt=""></div>
+          <div><img src="./images/chic/next.jpg" alt=""></div>
+          <div><img src="./images/chic/next2.jpg" alt=""></div>
+        </section>
+
+        <section class="summer summer-women flex">
+          <h1>Wear Your Summer Style</h1>
+          <button class="btn btn-dark">
+            buy now >
+          </button>
+        </section>
+
+        <section class="category flex">
+          <div class="category-box card">
+            <img src="./images/chic/cottage.jpg" alt="">
+            <p>Cottage</p>
+          </div>
+          <div class="category-box card">
+            <img src="./images/chic/ethnic.jpg" alt="">
+            <p>Ethnic</p>
+          </div>
+          <div class="category-box card">
+            <img src="./images/chic/casual.jpg" alt="">
+            <p>Casual</p>
+          </div>
+          <div class="category-box card">
+            <img src="./images/chic/holiday.jpg" alt="">
+            <p>Holiday</p>
+          </div>
+        </section>
+
+        <section class="summer summer-women-c flex">
+          <p>Time For Vacay Style</p>
+          <h1>Summer Time</h1>
+          <button class="btn btn-dark">
+            buy now >
+          </button>
+        </section>
+
+        <section class="category flex">
+          <div class="category-box card">
+            <img src="./images/chic/holiday.jpg" alt="">
+            <p>Holiday</p>
+          </div>
+          <div class="category-box card">
+            <img src="./images/chic/casual.jpg" alt="">
+            <p>Casual</p>
+          </div>
+          <div class="category-box card">
+            <img src="./images/chic/cottage.jpg" alt="">
+            <p>Cottage</p>
+          </div>
+          <div class="category-box card">
+            <img src="./images/chic/ethnic.jpg" alt="">
+            <p>Ethnic</p>
+          </div>
+        </section>
+
+        <section class="offer">
+          <h1>Special Offer</h1>
+          <div class="grid grid-3">
+            <div>
+              <div class="side-img">
+                <img src="./images/chic/victory.jpg" alt="">
+                <p>Victory Day Sale</p>
+              </div>
+            </div>
+            <div>
+              <div class="side-img">
+                <img src="./images/chic/population.jpg" alt="">
+                <p>Women's Demand</p>
+              </div>
+            </div>
+            <div>
+              <div class="side-img">
+                <img src="./images/chic/comfort.jpg" alt="">
+                <p>Comfortable Flats</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product">
+          <h1>You May Also Like</h1>
+          <div class="grid">
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p1.jpg" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product__overlay">
+                <button class="btn btn-light">Add to Wishlist</button>
+                <button class="btn btn-light">Quick View</button>
+                <button class="btn btn-light">Dislike it</button>
+                <a href="#">Similar items ></a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p2.jpg" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price">₦28.99</h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p3.jpg" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p4.webp" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p5.jpg" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p6.jpg" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="curvyT" data-tab-content>
+      <div class="banner-curvy"></div>
+
+      <section class="category grid grid-4">
+        <div class="category-box card">
+          <img src="./images/chic/cartoon.png" alt="">
+          <p>Cartoon</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/striped.png" alt="">
+          <p>Striped</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/patchwork.png" alt="">
+          <p>Patchwork</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/print.png" alt="">
+          <p>Print</p>
+        </div>
+
+        <div class="category-box card">
+          <img src="./images/chic/outerwear.png" alt="">
+          <p>Outwear</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/sweater.png" alt="">
+          <p>Sweater</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/hoodie.png" alt="">
+          <p>Hoodie</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/newe.png" alt="">
+          <p>O-NEWE</p>
+        </div>
+      </section>
+
+      <main class="container">
+        <!-- <section class="coupon">
+          <img src="./images/coupons.jpg" width="100%" alt="">
+        </section> -->
+
+        <section class="arrival grid">
+          <div class="side-img">
+            <img src="./images/chic/plus-size-top.jpg" alt="">
+            <!-- <p>Plus Size Tops</p> -->
+          </div>
+          <div class="side-img">
+            <img src="./images/chic/plus-size-dress.jpg" alt="">
+            <!-- <p>Plus Size Dresses</p> -->
+          </div>
+
+          <div class="side-img">
+            <img src="./images/chic/plus-size-jumpsuit.jpg" alt="">
+            <!-- <p>Plus Size Jumsuit</p> -->
+          </div>
+          <div class="side-img">
+            <img src="./images/chic/plus-size-pant.jpg" alt="">
+            <!-- <p>Plus Size Pants</p> -->
+          </div>
+        </section>
+
+        <section class="gracila">
+          <img src="./images/chic/plus-size-sale.jpg" width="100%" alt="">
+        </section>
+
+        <section class="gracila">
+          <img src="./images/chic/geometric-collection.jpg" width="100%" alt="">
+        </section>
+
+        <section class="product">
+          <h1>You May Also Like</h1>
+          <div class="grid">
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p8.jpg" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product__overlay">
+                <button class="btn btn-light">Add to Wishlist</button>
+                <button class="btn btn-light">Quick View</button>
+                <button class="btn btn-light">Dislike it</button>
+                <a href="#">Similar items ></a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p7.jpg" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price">₦28.99</h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p6.jpg" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p5.jpg" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p4.webp" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="../images/chic/p3.jpg" alt="" class="product-card-img" />
+                <span>NEW</span>
+              </div>
+              <div class="product-card-detail">
+                <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                <div class="product-card-price-wrap">
+                  <div class="product-card-price">
+                    <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                    <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                  </div>
+                  <div class="product-card-wish">
+                    <i class="fa fa-heart"></i>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="menT" data-tab-content>
+      <div class="banner-men"></div>
+
+      <section class="category grid grid-4">
+        <div class="category-box card">
+          <img src="./images/chic/shirts.png" alt="">
+          <p>Shirts</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/t-shirts.png" alt="">
+          <p>T-shirts</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/pants.png" alt="">
+          <p>Pants</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/two-pieces.png" alt="">
+          <p>Two Pieces</p>
+        </div>
+
+        <div class="category-box card">
+          <img src="./images/chic/shoes.png" alt="">
+          <p>Shoes</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/bags.png" alt="">
+          <p>Bags</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/accessories.png" alt="">
+          <p>Accessories</p>
+        </div>
+        <div class="category-box card">
+          <img src="./images/chic/underwears.png" alt="">
+          <p>Underwear</p>
+        </div>
+      </section>
+
+      <main class="container">
+        <!-- <section class="coupon">
+          <img src="./images/coupons.jpg" width="100%" alt="">
+        </section> -->
+
+        <div class="container">
+          <section class="arrival grid">
+            <div class="new-arrival grid">
+              <div>
+                <h1>New Arrival</h1>
+                <p>Summer Collection</p>
+              </div>
+              <div class="side-img">
+                <img src="./images/chic/new-arrival-men.jpg" alt="">
+                <p>N20</p>
+              </div>
+            </div>
+            <div class="new-arrival grid">
+              <div>
+                <h1>Best Sellers</h1>
+                <p>From only N3.4</p>
+              </div>
+              <div class="side-img">
+                <img src="./images/chic/best-sellers-men.jpg" alt="">
+                <p>N50</p>
+              </div>
+            </div>
+            <div class="new-arrival grid">
+              <div>
+                <h1>Flash Deals</h1>
+                <p>Down to N0.98</p>
+              </div>
+              <div class="side-img">
+                <img src="./images/chic/flash-deals-men.jpg" alt="">
+                <p>N60</p>
+              </div>
+            </div>
+            <div class="new-arrival grid">
+              <div>
+                <h1>Clearance</h1>
+                <p>Up to 40% OFF</p>
+              </div>
+              <div class="side-img">
+                <img src="./images/chic/clearance-men.jpg" alt="">
+                <p>N40</p>
+              </div>
+            </div>
+          </section>
+          <section class="gracila">
+            <img src="./images/chic/summer2.png" width="100%" alt="">
+          </section>
+          <section class="option flex">
+            <div><img src="./images/chic/next3.png" alt=""></div>
+            <div><img src="./images/chic/next4.png" alt=""></div>
+            <div><img src="./images/chic/next5.png" alt=""></div>
+          </section>
+          <section class="summer summer-men flex">
+            <p>Casual Graphic Store</p>
+            <h1>#Wear Your Summer Style 1</h1>
+            <button class="btn btn-dark">
+              buy now >
+            </button>
+          </section>
+          <section class="category flex">
+            <div class="category-box card">
+              <img src="./images/chic/poker.png" alt="">
+              <p>Poker</p>
+            </div>
+            <div class="category-box card">
+              <img src="./images/chic/smile-face.png" alt="">
+              <p>Smile Face</p>
+            </div>
+            <div class="category-box card">
+              <img src="./images/chic/animal.png" alt="">
+              <p>Animal</p>
+            </div>
+            <div class="category-box card">
+              <img src="./images/chic/shoes1.png" alt="">
+              <p>Caps</p>
+            </div>
+          </section>
+          <section class="summer summer-men-c flex">
+            <p>Design Shirt Collection</p>
+            <h1>#Wear Your Summer Style 2</h1>
+            <button class="btn btn-dark">
+              buy now >
+            </button>
+          </section>
+          <section class="category flex">
+            <div class="category-box card">
+              <img src="./images/chic/solid-color.png" alt="">
+              <p>Solid Color</p>
+            </div>
+            <div class="category-box card">
+              <img src="./images/chic/allover.png" alt="">
+              <p>Allover</p>
+            </div>
+            <div class="category-box card">
+              <img src="./images/chic/holiday-men.png" alt="">
+              <p>Holiday</p>
+            </div>
+            <div class="category-box card">
+              <img src="./images/chic/stripe.png" alt="">
+              <p>Stripe</p>
+            </div>
+          </section>
+          <section class="offer">
+            <h1>Special Offer</h1>
+            <div class="grid grid-3">
+              <div>
+                <div class="side-img">
+                  <img src="./images/chic/new-men.jpg" alt="">
+                  <p>Mixshirt</p>
+                </div>
+              </div>
+              <div>
+                <div class="side-img">
+                  <img src="./images/chic/neckshirt.jpeg" alt="">
+                  <p>Neck Shirt</p>
+                </div>
+              </div>
+              <div>
+                <div class="side-img">
+                  <img src="./images/chic/sandals.jpg" alt="">
+                  <p>Sandals</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product">
+            <h1>You May Also Like</h1>
+            <div class="grid">
+              <div class="product-card">
+                <div class="product-img-wrap">
+                  <img src="../images/chic/p9.jpg" alt="" class="product-card-img" />
+                  <span>NEW</span>
+                </div>
+                <div class="product-card-detail">
+                  <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                  <div class="product-card-price-wrap">
+                    <div class="product-card-price">
+                      <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                      <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                    </div>
+                    <div class="product-card-wish">
+                      <i class="fa fa-heart"></i>
+                      <span>15</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__overlay">
+                  <button class="btn btn-light">Add to Wishlist</button>
+                  <button class="btn btn-light">Quick View</button>
+                  <button class="btn btn-light">Dislike it</button>
+                  <a href="#">Similar items ></a>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img-wrap">
+                  <img src="../images/chic/p10.jpeg" alt="" class="product-card-img" />
+                  <span>NEW</span>
+                </div>
+                <div class="product-card-detail">
+                  <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                  <div class="product-card-price-wrap">
+                    <div class="product-card-price">
+                      <h5 class="s-price">₦28.99</h5>
+                      <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                    </div>
+                    <div class="product-card-wish">
+                      <i class="fa fa-heart"></i>
+                      <span>15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img-wrap">
+                  <img src="../images/chic/p11.jpg" alt="" class="product-card-img" />
+                  <span>NEW</span>
+                </div>
+                <div class="product-card-detail">
+                  <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                  <div class="product-card-price-wrap">
+                    <div class="product-card-price">
+                      <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                      <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                    </div>
+                    <div class="product-card-wish">
+                      <i class="fa fa-heart"></i>
+                      <span>15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img-wrap">
+                  <img src="../images/chic/p12.jpeg" alt="" class="product-card-img" />
+                  <span>NEW</span>
+                </div>
+                <div class="product-card-detail">
+                  <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                  <div class="product-card-price-wrap">
+                    <div class="product-card-price">
+                      <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                      <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                    </div>
+                    <div class="product-card-wish">
+                      <i class="fa fa-heart"></i>
+                      <span>15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img-wrap">
+                  <img src="../images/chic/p13.jpg" alt="" class="product-card-img" />
+                  <span>NEW</span>
+                </div>
+                <div class="product-card-detail">
+                  <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                  <div class="product-card-price-wrap">
+                    <div class="product-card-price">
+                      <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                      <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                    </div>
+                    <div class="product-card-wish">
+                      <i class="fa fa-heart"></i>
+                      <span>15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img-wrap">
+                  <img src="../images/chic/p15.jpg" alt="" class="product-card-img" />
+                  <span>NEW</span>
+                </div>
+                <div class="product-card-detail">
+                  <h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
+                  <div class="product-card-price-wrap">
+                    <div class="product-card-price">
+                      <h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
+                      <p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
+                    </div>
+                    <div class="product-card-wish">
+                      <i class="fa fa-heart"></i>
+                      <span>15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

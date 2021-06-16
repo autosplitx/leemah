@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/utility.css" />
+
+	<title>Leemah | Login</title>
+</head>
+
+<body>
+	<section class="promo-off flex">
+		<div class="promo"><a href="#">N6 off</a></div>
+		<div class="promo"><a href="#">N15 off</a></div>
+		<div class="promo"><a href="#">N25 off</a></div>
+	</section>
+
+	<header class="header">
+		<div class="top flex">
+			<div class="logo">
+				<a href="./account.html" class="back"> &larr; </a>
+				<a href="../index.html">Leemah<span class="text-danger">shop</span></a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="top-head">
+				<ul class="flex text-center">
+					<li data-tab-target="#signUp" class="active">Register</li>
+					<li data-tab-target="#signIn">Sign In</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<section class="tab-content">
+		<div id="signUp" data-tab-content class="active">
+			<p><i class="fa fa-gift"></i> <span>N20</span> OFF For New Users</p>
+			<div class="container my-2">
+				<form>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="E-mail address" />
+						<i class="fa fa-envelope"></i>
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Password" />
+						<i class="fa fa-eye-slash"></i>
+					</div>
+					<div class="policy">
+						<p>
+							By creating your account, you agree to our <a href="" class="policy-link"><em>Terms & Conditions</em></a>
+							and
+							<a href="" class="policy-link"><em>Privacy Policy</em></a>
+						</p>
+						<p class="flex"><input type="checkbox" checked /> Follow us to get newest information and <span>15%
+								OFF</span> coupon</p>
+					</div>
+					<div class="preference">
+						<p>Style Preference</p>
+						<div class="flex">
+							<button class="btn btn-light">Women fashion</button>
+							<button class="btn btn-light">Men fashion</button>
+						</div>
+					</div>
+					<button type="submit" class="btn">Register</button>
+				</form>
+			</div>
+		</div>
+
+		<div id="signIn" data-tab-content>
+			<div class="container my-2">
+				<form>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="E-mail address" />
+						<i class="fa fa-envelope"></i>
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Password" />
+						<i class="fa fa-eye-slash"></i>
+					</div>
+					<button type="submit" class="btn">Sign In</button>
+					<a href="#">Forgot Password?</a>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<script src="../js/script.js"></script>
+</body>
+
+</html>
