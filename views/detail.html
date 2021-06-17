@@ -5,8 +5,8 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../images/logo2.jpeg" type="image/x-icon">
-  <link rel="apple-touch-icon" href="../images/logo2.jpeg">
+	<link rel="icon" href="../images/logo2.jpeg" type="image/x-icon">
+	<link rel="apple-touch-icon" href="../images/logo2.jpeg">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 	<link rel="stylesheet" href="../css/style.css" />
 	<link rel="stylesheet" href="../css/utility.css" />
@@ -23,11 +23,13 @@
 
 	<div class="top-icon">
 		<div class="flex">
-			<div class="logos">
+			<div class="top-icon-nav">
 				<a href="./category.html" class="top-icon-item"><i class="fa fa-chevron-left"></i></a>
-				<a href="../index.html" class="home">Leemah<span class="text-danger">shop</span></a>
 			</div>
-			<div class="logos">
+			<a href="../index.html" class="home">
+				<img src="../images/logo1.jpg" alt="Leemahshop">
+			</a>
+			<div class="top-icon-nav">
 				<a href="#" class="top-icon-item"><i class="fa fa-upload"></i></a>
 				<a href="#" class="top-icon-item"><i class="fa fa-ellipsis-h"></i></a>
 			</div>
@@ -175,7 +177,39 @@
 					</div>
 					<div class="shipping-card-text">
 						<p>Size Chart</p>
-						<i class="fa fa-chevron-right"></i>
+						<p><i class="fa fa-chevron-right"></i></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="product-wrap">
+				<div class="card">
+					<div class="container">
+						<div class="product-card-frquency">
+							<h3>Frequently Bought Together</h3>
+							<div class="slider">
+								<div class="slides">
+									<div id="slide-1">
+										<img src="../images/chic/freq1.jpg" alt="Frequently Bought Together" />
+									</div>
+									<div id="slide-2">
+										<img src="../images/chic/freq2.jpg" alt="Frequently Bought Together" />
+									</div>
+									<div id="slide-3">
+										<img src="../images/chic/freq3.jpg" alt="Frequently Bought Together" />
+									</div>
+									<div id="slide-4">
+										<img src="../images/chic/freq4.jpg" alt="Frequently Bought Together" />
+									</div>
+									<div id="slide-5">
+										<img src="../images/chic/freq5.jpg" alt="Frequently Bought Together" />
+									</div>
+								</div>
+							</div>
+
+						</div>
 					</div>
 				</div>
 			</div>
@@ -232,6 +266,7 @@
 						<div class="comment">
 							<p class="product-attr">Size: S Color: Black Overall Fit: True to size</p>
 							<p class="product-comment">Lorem ipsum dolor sit amet.</p>
+							<img src="../images/bg.jpg" width="80" height="80" alt="User commented image">
 							<p class="product-comment-time flex">
 								<span>2021-11-04 15:54:12</span>
 								<i class="fa fa-thumbs-up"> 15</i>
@@ -430,7 +465,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="../js/script.js"></script>
-	
+
 	<script>
 		// The data/time we want to countdown to
 		let countDownDate = new Date("Aug 25, 2021 12:00:00").getTime();
