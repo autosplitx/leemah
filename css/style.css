@@ -624,7 +624,7 @@ nav .fa {
   font-size: 0.8rem;
 }
 
-.product-card-frquency .slides>div{
+.product-card-frquency .slides>div {
   width: 100px;
   height: 140px;
   margin-right: 0.5rem;
@@ -654,6 +654,10 @@ nav .fa {
 .product-review-wrap h4 {
   font-size: 1rem;
   font-weight: 700;
+}
+
+.product-review-wrap .prw {
+  margin-top: 2.5rem;
 }
 
 .shipping-wrap .card i {
@@ -898,7 +902,7 @@ nav .fa {
 }
 
 .top-icon .flex .home img {
- width: 80%;
+  width: 80%;
 }
 
 .d-home {
@@ -1333,6 +1337,10 @@ form a {
 .filter-head p:nth-child(2) {
   flex: 1;
   text-align: center;
+}
+
+.n-captcha {
+  margin-top: 10px;
 }
 
 /* small tablet styles */
