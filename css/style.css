@@ -14,6 +14,7 @@
 
 header .container {
   padding: 0 10px;
+  margin-top: 0.5rem;
 }
 
 [data-tab-content] {
@@ -24,9 +25,13 @@ header .container {
   display: block;
 }
 
+
 .top-head .flex {
   justify-content: space-around;
   align-items: flex-start;
+  padding: 0.5rem 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .nav-links>.fa-times {
@@ -45,7 +50,6 @@ header .container {
 .top-head ul li,
 .nav-links ul li {
   width: 100%;
-  padding: 8px 0;
   cursor: pointer;
   position: relative;
 }
@@ -124,20 +128,26 @@ main .container {
   padding: 0 10px;
 }
 
-.top.flex {
-  justify-content: space-between;
+.top.grid {
+  gap: 0;
+  padding: 0.8rem;
 }
 
-.top.flex.shadow {
-  box-shadow: 1px 2px 3px rgba(204, 204, 204, 0.3);
+.top .logo.flex {
+  justify-content: flex-start;
 }
 
-.logo span {
-  color: var(--error-color);
+.shadow {
+  box-shadow: 1px 2px 3px rgba(204, 204, 204, 0.8);
+}
+
+.logo img {
+  width: 110px;
+  display: block;
 }
 
 .icon {
-  margin-top: 0;
+  text-align: right;
 }
 
 .icon .counter {
@@ -146,13 +156,7 @@ main .container {
 }
 
 .top .fa {
-  margin: 0 1.2rem;
-  color: #333;
-  cursor: pointer;
-}
-
-.top .material-icons {
-  margin: 0 .5rem;
+  margin: 0 0.8rem;
   color: #333;
   cursor: pointer;
 }
@@ -165,10 +169,10 @@ main .container {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  font-size: 0.65rem;
+  font-weight: bold;
   top: -0.9rem;
-  right: 1rem;
-  /* right: 10px;
-  top: -15px; */
+  right: 0.6rem;
   color: #fff;
   background-color: var(--error-color);
 }
@@ -206,13 +210,13 @@ nav .fa {
 
 .promo {
   flex: 1;
-  padding: 8px;
+  padding: 0.5rem;
   text-align: center;
   text-transform: uppercase;
 }
 
 .category {
-  padding: 8px;
+  padding: 0.5rem;
   font-size: 0.6rem;
 }
 
@@ -244,7 +248,7 @@ nav .fa {
 .arrival.grid,
 .offer .grid,
 .product .grid {
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .new-arrival.grid {
@@ -629,6 +633,17 @@ nav .fa {
 
 .product-card-frquency .slides>div img {
   width: 100%;
+  padding: 0;
+}
+
+.slides p {
+  color: var(--dark-color);
+  width: 100%;
+  color: #fff;
+  font-size: 0.7rem;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
 }
 
 .product-wrap h1 {
@@ -1037,7 +1052,7 @@ nav .fa {
 .account .flex a {
   font-size: 0.9rem;
   color: #fff;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .account .flex .new-user {
@@ -1144,13 +1159,8 @@ nav .fa {
 
 /* ---------------------------- LOGIN --------------------------- */
 
-.logo {
-  padding: 1rem 0;
-}
-
-/* 
-.back {
-  padding: 10px;
+/* .logo {
+  padding: 0.8rem;
 } */
 
 .tab-content #signUp>p {
@@ -1175,7 +1185,7 @@ nav .fa {
 
 .form-control {
   width: 100%;
-  margin: 8px 0;
+  margin: 0.5rem 0;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #e8e8e8;
@@ -1194,7 +1204,7 @@ nav .fa {
   text-align: center;
   position: absolute;
   right: 0;
-  bottom: 8px;
+  bottom: 0.5rem;
   color: #777;
 }
 
@@ -1229,12 +1239,12 @@ form a:hover::after {
 }
 
 .policy p.flex {
-  margin-top: 8px;
+  margin-top: 0.5rem;
   justify-content: flex-start;
 }
 
 .policy p.flex input {
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 
 .policy p.flex span {
@@ -1258,6 +1268,7 @@ form a:hover::after {
 
 .preference .btn {
   width: 100%;
+  font-size: 0.75rem;
   border: 1px solid #f4f4f4;
   border-radius: 0;
   box-shadow: none;

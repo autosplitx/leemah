@@ -14,7 +14,7 @@ const navLinks = $("#navLinks");
 const filterLinks = $("#filterLinks");
 
 $(".closed").click(function () {
-	if (this.parentElement.className == "logo" || this.parentElement.id == "navLinks") {
+	if (this.parentElement.className == "logo flex" || this.parentElement.id == "navLinks") {
 		navLinks.toggleClass("open");
 	} else {
 		filterLinks.toggleClass("open-filter");

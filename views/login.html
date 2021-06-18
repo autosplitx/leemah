@@ -5,9 +5,9 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../images/logo2.jpeg" type="image/x-icon">
-  <link rel="apple-touch-icon" href="../images/logo2.jpeg">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+	<link rel="icon" href="../images/logo2.jpeg" type="image/x-icon">
+	<link rel="apple-touch-icon" href="../images/logo2.jpeg">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 	<link rel="stylesheet" href="../css/style.css" />
 	<link rel="stylesheet" href="../css/utility.css" />
 
@@ -22,10 +22,12 @@
 	</section>
 
 	<header class="header">
-		<div class="top flex">
-			<div class="logo">
-				<a href="./account.html" class="back"> &larr; </a>
-				<a href="../index.html">Leemah<span class="text-danger">shop</span></a>
+		<div class="top grid shadow">
+			<div class="logo flex">
+				<a href="../index.html"><i class="fa fa-chevron-left"></i></a>
+				<a href="../index.html" class="home">
+					<img src="../images/logo1.jpg" alt="Leemahshop">
+				</a>
 			</div>
 		</div>
 		<div class="container">
@@ -42,14 +44,18 @@
 		<div id="signUp" data-tab-content class="active">
 			<p><i class="fa fa-gift"></i> <span>N20</span> OFF For New Users</p>
 			<div class="container my-2">
-				<form>
+				<form name="registeration" method="POST" data-netlify-recaptcha="true" data-netlify="true">
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="E-mail address" />
+						<input type="email" name="email" class="form-control" placeholder="E-mail address" />
 						<i class="fa fa-envelope"></i>
 					</div>
 					<div class="form-group">
-						<input type="password" class="form-control" placeholder="Password" />
+						<input type="password" name="password" class="form-control" placeholder="Password" />
 						<i class="fa fa-eye-slash"></i>
+					</div>
+					<div class="form-group">
+						<input type="text" name="coupon" class="form-control" placeholder="Please enter code" />
+						<i style="font-size: 0.7rem;">qwErty</i>
 					</div>
 					<div class="policy">
 						<p>
@@ -63,10 +69,11 @@
 					<div class="preference">
 						<p>Style Preference</p>
 						<div class="flex">
-							<button class="btn btn-light">Women fashion</button>
-							<button class="btn btn-light">Men fashion</button>
+							<button type="button" class="btn btn-light">Women fashion</button>
+							<button type="button" class="btn btn-light">Men fashion</button>
 						</div>
 					</div>
+					<div data-netlify-recaptcha="true"></div>
 					<button type="submit" class="btn">Register</button>
 				</form>
 			</div>
