@@ -2,278 +2,908 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../images/logo2.jpeg" type="image/x-icon">
-  <link rel="apple-touch-icon" href="../images/logo2.jpeg">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-	<link rel="stylesheet" href="../css/utility.css" />
-	<link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="icon" href="../images/logo2.jpeg" type="image/x-icon" />
 
-	<title>Leemah | Category</title>
+  <link rel="apple-touch-icon" href="../images/logo2.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.min.css" />
+  <link rel="stylesheet" href="../css/utility.css" />
+
+  <title>Leemah | Test</title>
 </head>
 
 <body>
-	<section class="promo-off flex">
-		<div class="promo"><a href="#">N6 off</a></div>
-		<div class="promo"><a href="#">N15 off</a></div>
-		<div class="promo"><a href="#">N25 off</a></div>
-	</section>
-
-	<header class="header">
-		<div class="top grid shadow">
+  <header class="header stock">
+    <section class="promo-off flex">
+      <div class="promo"><a href="#">N6 off</a></div>
+      <div class="promo"><a href="#">N15 off</a></div>
+      <div class="promo"><a href="#">N25 off</a></div>
+    </section>
+    <div class="top grid shadow">
       <div class="logo flex">
-        <i class="fa fa-chevron-left back"></i>
+        <a href="../index.html"><i class="fa fa-home-alt"></i></a>
         <a href="../index.html" class="home">
-          <img src="../images/logo1.jpg" alt="Leemahshop">
+          <img src="../images/logo1.jpg" alt="Leemahshop" />
         </a>
       </div>
       <div class="icon">
-        <a href="./account.html">
-          <i class="fa fa-user"></i>
-        </a>
         <i class="fa fa-search"></i>
 
         <span class="counter">
           <i class="fa fa-shopping-bag"></i>
-          <span>15</span>
+          <span>5</span>
         </span>
       </div>
     </div>
+    <div class="container">
+      <div class="top-head">
+        <ul class="flex text-center">
+          <li data-tab-target="#womenclothing" class="active">Women</li>
+          <li data-tab-target="#menclothing">Men</li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-		<div class="f-nav">
-			<div class="top-head">
-				<ul class="flex text-center">
-					<li data-tab-target="#all" class="active"><a href="">ALL</a></li>
-					<li data-tab-target="#womenC"><a href="#">Women</a></li>
-					<li data-tab-target="#bagC"><a href="#">Bags</a></li>
-					<li data-tab-target="#shoeC"><a href="#">Shoes</a></li>
-					<li data-tab-target="#jewelryC"><a href="#">Jewelry & Watch</a></li>
-				</ul>
-				<ul class="flex text-center">
-					<li data-tab-target="#category" class="">
-						Category
-						<i class="fa fa-angle-down"></i>
-						<i class="fa fa-angle-up"></i>
-					</li>
-					<li data-tab-target="#curvyT">
-						Sort
-						<i class="fa fa-long-arrow-down"></i>
-						<i class="fa fa-long-arrow-up"></i>
-					</li>
-					<li data-tab-target="#color">
-						Color
-						<i class="fa fa-angle-down"></i>
-						<i class="fa fa-angle-up"></i>
-					</li>
-					<li class="closed">
-						Filter
-						<i class="fa fa-filter"></i>
-					</li>
-				</ul>
-			</div>
-		</div>
+  <section>
+    <div class="category-wrap flex light-color">
+      <aside class="category-aside">
+        <nav>
+          <ul>
+            <li data-tab-target="#womenclothing" class="active"><a href="#">Clothing</a></li>
+            <li data-tab-target="#wp-size"><a href="#">Plus Size</a></li>
+            <li data-tab-target="#wshoes"><a href="#">Shoes</a></li>
+            <li data-tab-target="#wbags"><a href="#">Bags</a></li>
+            <li data-tab-target="#wbeauty"><a href="#">Acc & Beauty</a></li>
+            <li data-tab-target="#wkids"><a href="#">Kids & Mom</a></li>
+            <li data-tab-target="#wgarden"><a href="#">Home & Garden</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="category-content">
+        <div id="womenclothing" data-tab-content class="active p-clothing">
+          <div class="card">
+            <h2>Hot</h2>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-1.png" alt="New in" />
+                <p>New In</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-2.png" alt="Best seller" />
+                <p>Best Seller</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-3.png" alt="Sale" />
+                <p>Sale</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Tops</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-1.png" alt="T-Shirts" />
+                <p>T-Shirts</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-19.png" alt="Blouses" />
+                <p>Blouses</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-18.png" alt="Shirts" />
+                <p>Shirts</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-17.png" alt="Sweatershirts" />
+                <p>Sweatershirts</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-16.png" alt="Hoodies" />
+                <p>Hoodies</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-15.jpg" alt="Tank Tops" />
+                <p>Tank Tops</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Bottoms</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-21.png" alt="Pants & Capris" />
+                <p>Pants & Capris</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-20.png" alt="Denim & Jeans" />
+                <p>Denim & Jeans</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-22.png" alt="Jumpsuits" />
+                <p>Jumpsuits</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-23.png" alt="Shorts & Skirts" />
+                <p>Shorts & Skirts</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Outerwear</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-8.png" alt="Coats" />
+                <p>Coats</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-7.png" alt="Jackets" />
+                <p>Jackets</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-25.png" alt="Sweaters" />
+                <p>Sweaters</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-24.png" alt="Cardigans" />
+                <p>Cardigans</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-5.png" alt="Kimono" />
+                <p>Kimono</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-6.png" alt="Balzers" />
+                <p>Balzers</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Dresses</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-9.jpeg" alt="Vintage" />
+                <p>Vintage</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-10.jpeg" alt="Casual" />
+                <p>Casual</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-11.jpg" alt="Bohemian" />
+                <p>Bohemian</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-12.jpg" alt="Print" />
+                <p>Print</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-13.jpg" alt="Patchwork" />
+                <p>Patchwork</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-14.jpg" alt="Plain" />
+                <p>Plain</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-		<nav>
-			<div class="filter-links" id="filterLinks">
-				<div class="filter-content">
-					<div class="filter-head">
-						<p><i class="fa fa-times closed"></i></p>
-						<p>Filter</p>
-					</div>
-					<div class="container side-bar">
-						<h1>Welcome to Filter</h1>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</header>
+        <div id="wp-size" data-tab-content class="p-clothing">
+          <div class="card">
+            <h2>Hot</h2>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-26.jpg" alt="New in" />
+                <p>New In</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-27.jpg" alt="Best seller" />
+                <p>Best Seller</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-28.jpg" alt="Sale" />
+                <p>Sale</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Tops</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-29.png" alt="T-Shirts" />
+                <p>T-Shirts</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-30.png" alt="Blouses" />
+                <p>Blouses</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-31.png" alt="Shirts" />
+                <p>Shirts</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-32.png" alt="Sweatershirts" />
+                <p>Sweatershirts</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-33.png" alt="Hoodies" />
+                <p>Hoodies</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-34.png" alt="Tank Tops" />
+                <p>Tank Tops</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Bottoms</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-35.png" alt="Pants & Capris" />
+                <p>Pants & Capris</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-36.png" alt="Denim & Jeans" />
+                <p>Denim & Jeans</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-37.png" alt="Jumpsuits" />
+                <p>Jumpsuits</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-38.png" alt="Shorts & Skirts" />
+                <p>Shorts & Skirts</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Outerwear</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-39.png" alt="Coats" />
+                <p>Coats</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-40.png" alt="Jackets" />
+                <p>Jackets</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-41.png" alt="Sweaters" />
+                <p>Sweaters</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-42.png" alt="Cardigans" />
+                <p>Cardigans</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Dresses</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-43.png" alt="Vintage" />
+                <p>Vintage</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-44.png" alt="Casual" />
+                <p>Casual</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-45.png" alt="Bohemian" />
+                <p>Bohemian</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-46.png" alt="Print" />
+                <p>Print</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-47.png" alt="Patchwork" />
+                <p>Patchwork</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-48.png" alt="Plain" />
+                <p>Plain</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-	<main>
-		<div class="container">
-			<section class="shop">
-				<h1>You May Also Like</h1>
-				<div class="flex">
-					<aside class="categories">
-						<h1>TODO: Sidebar</h1>
-					</aside>
-					<!-- <div class="grid grid-4"> -->
-					<div class="grid">
-						<div class="product-card">
-							<div class="product-img-wrap">
-								<img src="../images/chic/p8.jpg" alt="New Product" class="product-card-img" />
-								<span>NEW</span>
-							</div>
-							<div class="product-card-detail">
-								<h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
-								<div class="product-card-price-wrap">
-									<div class="product-card-price">
-										<h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
-										<p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
-									</div>
-									<div class="product-card-wish">
-										<i class="fa fa-heart"></i>
-										<span>15</span>
-									</div>
-								</div>
-							</div>
-							<div class="product__overlay">
-								<button type="button" class="btn btn-light">Add to Wishlist</button>
-								<button type="button" class="btn btn-light">
-									<a href="./detail.html">Quick View</a>
-								</button>
-								<button type="button" class="btn btn-light">Dislike it</button>
-								<a href="#" class="similar">Similar items ></a>
-							</div>
-						</div>
-						<div class="product-card">
-							<div class="product-img-wrap">
-								<img src="../images/chic/p7.jpg" alt="New Product" class="product-card-img" />
-								<span>NEW</span>
-							</div>
-							<div class="product-card-detail">
-								<h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
-								<div class="product-card-price-wrap">
-									<div class="product-card-price">
-										<h5 class="s-price">₦28.99</h5>
-										<p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
-									</div>
-									<div class="product-card-wish">
-										<i class="fa fa-heart"></i>
-										<span>15</span>
-									</div>
-								</div>
-							</div>
-							<div class="product__overlay">
-								<button type="button" class="btn btn-light">Add to Wishlist</button>
-								<button type="button" class="btn btn-light">
-									<a href="./detail.html">Quick View</a>
-								</button>
-								<button type="button" class="btn btn-light">Dislike it</button>
-								<a href="#" class="similar">Similar items ></a>
-							</div>
-						</div>
-						<div class="product-card">
-							<div class="product-img-wrap">
-								<img src="../images/chic/p6.jpg" alt="New Product" class="product-card-img" />
-								<span>NEW</span>
-							</div>
-							<div class="product-card-detail">
-								<h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
-								<div class="product-card-price-wrap">
-									<div class="product-card-price">
-										<h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
-										<p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
-									</div>
-									<div class="product-card-wish">
-										<i class="fa fa-heart"></i>
-										<span>15</span>
-									</div>
-								</div>
-							</div>
-							<div class="product__overlay">
-								<button type="button" class="btn btn-light">Add to Wishlist</button>
-								<button type="button" class="btn btn-light">
-									<a href="./detail.html">Quick View</a>
-								</button>
-								<button type="button" class="btn btn-light">Dislike it</button>
-								<a href="#" class="similar">Similar items ></a>
-							</div>
-						</div>
-						<div class="product-card">
-							<div class="product-img-wrap">
-								<img src="../images/chic/p5.jpg" alt="New Product" class="product-card-img" />
-								<span>NEW</span>
-							</div>
-							<div class="product-card-detail">
-								<h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
-								<div class="product-card-price-wrap">
-									<div class="product-card-price">
-										<h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
-										<p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
-									</div>
-									<div class="product-card-wish">
-										<i class="fa fa-heart"></i>
-										<span>15</span>
-									</div>
-								</div>
-							</div>
-							<div class="product__overlay">
-								<button type="button" class="btn btn-light">Add to Wishlist</button>
-								<button type="button" class="btn btn-light">
-									<a href="./detail.html">Quick View</a>
-								</button>
-								<button type="button" class="btn btn-light">Dislike it</button>
-								<a href="#" class="similar">Similar items ></a>
-							</div>
-						</div>
-						<div class="product-card">
-							<div class="product-img-wrap">
-								<img src="../images/chic/p4.webp" alt="New Product" class="product-card-img" />
-								<span>NEW</span>
-							</div>
-							<div class="product-card-detail">
-								<h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
-								<div class="product-card-price-wrap">
-									<div class="product-card-price">
-										<h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
-										<p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
-									</div>
-									<div class="product-card-wish">
-										<i class="fa fa-heart"></i>
-										<span>15</span>
-									</div>
-								</div>
-							</div>
-							<div class="product__overlay">
-								<button type="button" class="btn btn-light">Add to Wishlist</button>
-								<button type="button" class="btn btn-light">
-									<a href="./detail.html">Quick View</a>
-								</button>
-								<button type="button" class="btn btn-light">Dislike it</button>
-								<a href="#" class="similar">Similar items ></a>
-							</div>
-						</div>
-						<div class="product-card">
-							<div class="product-img-wrap">
-								<img src="../images/chic/p3.jpg" alt="New Product" class="product-card-img" />
-								<span>NEW</span>
-							</div>
-							<div class="product-card-detail">
-								<h5><a href="#!">Floral Lace V-neck Knotted Dress</a></h5>
-								<div class="product-card-price-wrap">
-									<div class="product-card-price">
-										<h5 class="s-price"><span>₦28.99</span> <small><s>₦58.99</s></small></h5>
-										<p class="p-price"><i class="fa fa-tag"></i> Buy 2 Get 20% OFF</p>
-									</div>
-									<div class="product-card-wish">
-										<i class="fa fa-heart"></i>
-										<span>15</span>
-									</div>
-								</div>
-							</div>
-							<div class="product__overlay">
-								<button type="button" class="btn btn-light">Add to Wishlist</button>
-								<button type="button" class="btn btn-light">
-									<a href="./detail.html">Quick View</a>
-								</button>
-								<button type="button" class="btn btn-light">Dislike it</button>
-								<a href="#" class="similar">Similar items ></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-	</main>
+        <div id="wshoes" data-tab-content class="p-clothing">
+          <div class="card">
+            <h2>Hot</h2>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-49.png" alt="New in" />
+                <p>New In</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-50.png" alt="Best seller" />
+                <p>Best Seller</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-51.png" alt="Sale" />
+                <p>Sale</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Boots</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-52.png" alt="Socofy" />
+                <p>Socofy</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-50.png" alt="Flat Boots" />
+                <p>Flat Boots</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-53.png" alt="Embroidered Boots" />
+                <p>Embroidered Boots</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-54.png" alt="Snow Boots" />
+                <p>Snow Boots</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-55.png" alt="Printed Boots" />
+                <p>Printed Boots</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-56.png" alt="Ankle Boots" />
+                <p>Ankle Boots</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-57.png" alt="Mid-calf Boots" />
+                <p>Mid-calf Boots</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-58.png" alt="Hand-Stiched" />
+                <p>Hand-Stiched</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-59.png" alt="Heel Boots" />
+                <p>Heel Boots</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Flats</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-60.png" alt="Printed Flats" />
+                <p>Printed Flats</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-61.png" alt="Slip-On Flats" />
+                <p>Slip-On Flats</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-62.png" alt="Sneakers" />
+                <p>Sneakers</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-63.png" alt="Leather Flats" />
+                <p>Leather Flats</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-64.png" alt="Canvas Flats" />
+                <p>Canvas Flats</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-65.png" alt="Suede" />
+                <p>Suede</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-66.png" alt="Home Shoes" />
+                <p>Home Shoes</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Sandals</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-67.png" alt="Flat Sandals" />
+                <p>Flat Sandals</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-68.png" alt="Wedge Sandals" />
+                <p>Wedge Sandals</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-69.png" alt="Platform Sandals" />
+                <p>Platform Sandals</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-70.png" alt="Flip Flop Sandals" />
+                <p>Flip Flop Sandals</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-71.png" alt="Heeled Sandals" />
+                <p>Heeled Sandals</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Dresses</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-43.png" alt="Vintage" />
+                <p>Vintage</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-44.png" alt="Casual" />
+                <p>Casual</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-45.png" alt="Bohemian" />
+                <p>Bohemian</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-46.png" alt="Print" />
+                <p>Print</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-47.png" alt="Patchwork" />
+                <p>Patchwork</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-48.png" alt="Plain" />
+                <p>Plain</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-	<!-- <section class="tab-content container">
-			<h1>Welcome to Category</h1>
-		</section> -->
+        <div id="wbags" data-tab-content class="p-clothing">
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR BAGS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR BAGS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR BAGS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+        </div>
 
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="../js/script.js"></script>
+        <div id="wbeauty" data-tab-content class="p-clothing">
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR ACCESSORIES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR ACCESSORIES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR ACCESSORIES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+        </div>
+
+        <div id="wkids" data-tab-content class="p-clothing">
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR KIDS & MOM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR KIDS & MOM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR KIDS & MOM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+        </div>
+
+        <div id="wgarden" data-tab-content class="p-clothing">
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR HOME & GARDEN</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR HOME & GARDEN</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR HOME & GARDEN</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="category-wrap flex light-color">
+      <aside class="category-aside">
+        <nav>
+          <ul>
+            <li data-tab-target="#menclothing" class=""><a href="#">Clothing</a></li>
+            <li data-tab-target="#mshoes"><a href="#">Shoes</a></li>
+            <li data-tab-target="#mbags"><a href="#">Bags</a></li>
+            <li data-tab-target="#maccessories"><a href="#">Accessories</a></li>
+            <li data-tab-target="#mgarden"><a href="#">Home & Garden</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="category-content">
+        <div id="menclothing" data-tab-content class=" p-clothing">
+          <div class="card">
+            <h2>Hot</h2>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-72.png" alt="New in" />
+                <p>New In</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-73.png" alt="Best seller" />
+                <p>Best Seller</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-74.png" alt="Sale" />
+                <p>Sale</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Tops</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-75.png" alt="Shirts" />
+                <p>Shirts</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-76.png" alt="T-Shirts" />
+                <p>T-Shirts</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-77.png" alt="Henley Shirts" />
+                <p>Henley Shirts</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-78.png" alt="Hoodies" />
+                <p>Hoodies</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-79.png" alt="Sweatershirts" />
+                <p>Sweatershirts</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-80.png" alt="Sweaters" />
+                <p>Sweaters</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Bottoms</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-81.png" alt="Pants" />
+                <p>Pants</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-82.png" alt="Shorts" />
+                <p>Shorts</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-83.png" alt="Denim & Jeans" />
+                <p>Denim & Jeans</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-84.png" alt="Jumpsuits" />
+                <p>Jumpsuits</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Outerwear</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-85.png" alt="Coats" />
+                <p>Coats</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-86.png" alt="Jackets" />
+                <p>Jackets</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-87.png" alt="Down & Parkas" />
+                <p>Down & Parkas</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-88.png" alt="Vests" />
+                <p>Vests</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-89.png" alt="Cardigans" />
+                <p>Cardigans</p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="mshoes" data-tab-content class="p-clothing">
+          <div class="card">
+            <h2>Hot</h2>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-90.png" alt="New in" />
+                <p>New In</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-91.png" alt="Best seller" />
+                <p>Best Seller</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-92.png" alt="Sale" />
+                <p>Sale</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Boots</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-93.png" alt="Menico" />
+                <p>Menico</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-94.png" alt="Leather Boots" />
+                <p>Leather Boots</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-95.png" alt="Hand Stitched" />
+                <p>Hand Stitched</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-96.png" alt="Snow Boots" />
+                <p>Snow Boots</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-97.png" alt="Hiking Boots" />
+                <p>Hiking Boots</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-98.png" alt="Tooling Boots" />
+                <p>Tooling Boots</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Flats</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-60.png" alt="Printed Flats" />
+                <p>Printed Flats</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-61.png" alt="Slip-On Flats" />
+                <p>Slip-On Flats</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-62.png" alt="Sneakers" />
+                <p>Sneakers</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-63.png" alt="Leather Flats" />
+                <p>Leather Flats</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-64.png" alt="Canvas Flats" />
+                <p>Canvas Flats</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-65.png" alt="Suede" />
+                <p>Suede</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-66.png" alt="Home Shoes" />
+                <p>Home Shoes</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex">
+              <h2>Sandals</h2>
+              <a href="#">ALL <i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="category-content-items grid grid-3">
+              <div>
+                <img src="../images/chic/c-67.png" alt="Flat Sandals" />
+                <p>Flat Sandals</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-68.png" alt="Wedge Sandals" />
+                <p>Wedge Sandals</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-69.png" alt="Platform Sandals" />
+                <p>Platform Sandals</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-70.png" alt="Flip Flop Sandals" />
+                <p>Flip Flop Sandals</p>
+              </div>
+              <div>
+                <img src="../images/chic/c-71.png" alt="Heeled Sandals" />
+                <p>Heeled Sandals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="mbags" data-tab-content class="p-clothing">
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR BAGS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR BAGS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR BAGS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+        </div>
+
+        <div id="maccessories" data-tab-content class="p-clothing">
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR ACCESSORIES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR ACCESSORIES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR ACCESSORIES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+        </div>
+
+        <div id="mgarden" data-tab-content class="p-clothing">
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR HOME & GARDEN</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR HOME & GARDEN</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-exclamation-triangle"></i> NO PRODUCT AVAILABLE FOR HOME & GARDEN</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates nam ipsum, quod temporibus
+              repudiandae. Non impedit nostrum similique quasi doloribus, magni amet quaerat rerum accusantium ad
+              molestiae laborum beatae?</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <footer>
+    <a href="../index.html">
+      <i class="fa fa-home"></i>
+      <p>Home</p>
+    </a>
+    <a href="./category.html" class="active">
+      <i class="fa fa-th-large"></i>
+      <p class="active">Category</p>
+    </a>
+    <a href="./account.html">
+      <i class="fa fa-users"></i>
+      <p>Account</p>
+    </a>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

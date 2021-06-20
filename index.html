@@ -10,11 +10,10 @@
 
   <link rel="apple-touch-icon" href="./images/logo2.jpeg">
 
-  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
   <link rel="stylesheet" href="./css/utility.css" />
 
   <title>Leemah | Home</title>
@@ -63,25 +62,21 @@
         <div class="clear"></div>
         <div class="side-bar">
           <ul class="flex text-center">
-            <li data-tab-target="#womenS" class="active">Women</li>
-            <li data-tab-target="#menS">Men</li>
+            <li data-tab-target="#womenS" class="active">
+              <a href="./views/category.html">Women</a>
+            </li>
+            <li data-tab-target="#menS">
+              <a href="./views/category.html">Men</a>
+            </li>
           </ul>
         </div>
 
         <div class="tab-content">
           <div id="womenS" data-tab-content class="active">
-            <h3>Women</h3>
-            <ul>
-              <li><a href="#clothings">Clothings</a></li>
-              <li><a href="#plus">Plus Size</a></li>
-            </ul>
+            <h4 class="my-2">Women category under development</h4>
           </div>
           <div id="menS" data-tab-content>
-            <h3>Men</h3>
-            <ul>
-              <li><a href="#clothings">Clothings</a></li>
-              <li><a href="#shoes">Shoes</a></li>
-            </ul>
+            <h4 class="my-2">Men category under development</h4>
           </div>
         </div>
       </div>
@@ -94,7 +89,7 @@
 
       <section class="category grid grid-4">
         <div class="category-box card">
-          <a href="./views/category.html">
+          <a href="./views/style.html">
             <img src="./images/chic/tops.webp" alt="Tops">
             <p>Tops</p>
           </a>
@@ -904,6 +899,21 @@
       </main>
     </div>
   </section>
+
+  <footer>
+    <a class="active" href="./index.html">
+      <i class="fa fa-home"></i>
+      <p class="active">Home</p>
+    </a>
+    <a href="./views/category.html">
+      <i class="fa fa-th-large"></i>
+      <p>Category</p>
+    </a>
+    <a href="./views/account.html">
+      <i class="fa fa-users"></i>
+      <p>Account</p>
+    </a>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/script.js"></script>
