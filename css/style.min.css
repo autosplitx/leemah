@@ -1529,7 +1529,7 @@ footer .container .flex p {
   font-weight: 700
 }
 
-footer .container .flex p:nth-child(2) {
+footer .container .flex .text-danger {
   color: var(--error-color)
 }
 
@@ -1559,6 +1559,14 @@ footer .container .s-anch {
   padding: .5rem 1rem;
   margin-top: .5rem;
   background-image: linear-gradient(to right, #ff6947, var(--error-color))
+}
+
+.shopping-bag-product-rigt input {
+  width: 4rem;
+  text-align: center;
+  outline: none;
+  border-radius: 0;
+  border: 0;
 }
 
 @media screen and (min-width:630px) {
