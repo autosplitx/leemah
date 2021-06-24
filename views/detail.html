@@ -15,6 +15,7 @@
 </head>
 
 <body>
+	<a id="back-to-top"></a>
 	<section class="promo-off flex">
 		<div class="promo"><a href="#">N6 off</a></div>
 		<div class="promo"><a href="#">N15 off</a></div>
@@ -129,8 +130,8 @@
 				</div>
 				<div class="product-attribute-items">
 					<div class="attribute-title">
-						<h4>Size</h4>
-						<h4>Size Chart <i class="fa fa-chevron-right"></i></h4>
+						<h4>Size(US):</h4>
+						<h4><a href="#">Size Chart <i class="fa fa-chevron-right"></i></a></h4>
 					</div>
 					<div class="attribute-option">
 						<ul>
@@ -468,27 +469,33 @@
 
 	</main>
 
+	<a href="#back-to-top" class="back-to-top flex"><i class="fa fa-hand-point-up"></i></a>
+
 	<footer class="footer-detail">
 		<div class="container">
-			<div class="flex">
-				<a href="#">
-					<i class="fa fa-heart"></i>
-				</a>
-				<a href="./shoppingcart.html">
-					<i class="fa fa-shopping-bag"></i>
-				</a>
-				<a href="./shoppingcart.html" class="cart">
-					<span>Add To Bag</span>
-				</a>
+			<div class="grid">
+				<div class="flex">
+					<a href="#">
+						<i class="fa fa-heart"></i>
+					</a>
+					<a href="./shoppingcart.html">
+						<i class="fa fa-shopping-bag"></i>
+						<span>5</span>
+					</a>
+				</div>
+				<div>
+					<a href="./shoppingcart.html" class="cart">
+						<span>Add To Bag</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="../js/script.js"></script>
+	<script src="../js/script.min.js"></script>
 
 	<script>
-		// The data/time we want to countdown to
 		let countDownDate = new Date("Aug 25, 2021 12:00:00").getTime();
 
 		let countDown = setInterval(() => {

@@ -1,8 +1,14 @@
 :root {
+  --color-black-default: #0e1e25;
+  --color-white: #ffffff;
+  --color-gray-darkest: #2e3c42;
+  --color-gray-darker: #646e73;
+  --color-gray-dark: #d7f1fc;
+  --color-gray-default: #a4aaad;
+  --color-gray-light: #eaebec;
   --primary-color: #2c2c2c;
   --secondary-color: #6c757d;
   --dark-color: #292b2c;
-  /* --light-color: #f4f4f4; */
   --light-color: #d9d9d9;
   --success-color: #5cb85c;
   --info-color: #5bc0de;
@@ -15,6 +21,7 @@
 .fa-exclamation-triangle {
   color: var(--warning-color);
 }
+
 .color-grey {
   background-color: #e8e8e8;
 }
@@ -33,7 +40,8 @@ html {
 }
 
 body {
-  /* background-color: var(--secondary-color); */
+  /* background-color: var(--color-black-default);
+  color: var(--color-gray-dark); */
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
