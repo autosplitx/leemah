@@ -1484,7 +1484,8 @@ form a {
 
 .shopping-bag-product-left img {
   width: 100%;
-  display: block
+  display: block;
+  margin-right: 0.25rem;
 }
 
 .shopping-bag-product-rigt h2 {
