@@ -30,7 +30,10 @@
   <header class="header">
     <div class="top grid">
       <div class="logo flex">
-        <i class="fa fa-bars closed"></i>
+        <!-- <a href="#homesidenav" id="homesidenav" class="btn open"><i class="fa fa-bars"></i></a> -->
+        <div class="bars">
+          <i class="fa fa-bars"></i>
+        </div>
         <a href="./index.html" class="home">
           <img src="./images/logo1.jpg" alt="Leemahshop">
         </a>
@@ -57,31 +60,111 @@
       </div>
     </div>
 
-    <nav>
-      <div class="nav-links" id="navLinks">
-        <i class="fa fa-times closed"></i>
-        <div class="clear"></div>
-        <div class="side-bar">
-          <ul class="flex text-center">
-            <li data-tab-target="#womenS" class="active">
-              <a href="./views/category.html">Women</a>
-            </li>
-            <li data-tab-target="#menS">
-              <a href="./views/category.html">Men</a>
-            </li>
-          </ul>
-        </div>
+    <div class="backdrop"></div>
 
-        <div class="tab-content">
-          <div id="womenS" data-tab-content class="active">
-            <h4 class="my-2">Women category under development</h4>
-          </div>
-          <div id="menS" data-tab-content>
-            <h4 class="my-2">Men category under development</h4>
-          </div>
-        </div>
+    <div class="homesidebar">
+      <div class="sidebar-logo">
+        <img src="./images/logo1.jpg" alt="Logo" />
       </div>
-    </nav>
+      <div class="top-head">
+        <ul class="flex text-center">
+          <li class="active">
+            <a href="#!" class="white">Women</a>
+          </li>
+          <li>
+            <a href="#!" class="white">Men</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-list">
+        <ul>
+          <li class="sidebar-item">
+            <a href="#!" class="sub-btn"><i class="fa fa-tshirt"></i>Clothings
+              <i class="fa fa-chevron-right dropdown"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./views/category.html" class="sub-menu-item">Hot</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Tops</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Bottoms</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Swimwear</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Outerwear</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Pajamas & Robes</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a href="#!" class="sub-btn"><i class="fa fa-stroopwafel"></i>Plus Size
+              <i class="fa fa-chevron-right dropdown"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./views/category.html" class="sub-menu-item">Hot</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Tops</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Bottoms</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Outerwear</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a href="#!" class="sub-btn"><i class="fa fa-shoe-prints"></i>Shoes
+              <i class="fa fa-chevron-right dropdown"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./views/category.html" class="sub-menu-item">Hot</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Boots</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Flats</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Sandals</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a href="#!" class="sub-btn"><i class="fa fa-shopping-bag"></i>Bags
+              <i class="fa fa-chevron-right dropdown"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./views/category.html" class="sub-menu-item">Hot</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Printed Bags</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Leemah Bags</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Handbags</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Funtional Bags</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Walets</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a href="#!" class="sub-btn"><i class="fa fa-spa"></i>Acc & Beauty
+              <i class="fa fa-chevron-right dropdown"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./views/category.html" class="sub-menu-item">Hot</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Health Care</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Accessories</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Make Up</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Jewelries</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Personal Care</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a href="#!" class="sub-btn"><i class="fa fa-child"></i>Kids & Mom
+              <i class="fa fa-chevron-right dropdown"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./views/category.html" class="sub-menu-item">Hot</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Maternity Clothes</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Girls</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Boys</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Baby</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a href="#!" class="sub-btn"><i class="fa fa-tree"></i>Home & Garden
+              <i class="fa fa-chevron-right dropdown"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./views/category.html" class="sub-menu-item">Hot</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Home Textile</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Home Decor</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Home Improvement</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">House Organization</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Kitchen & Dinning</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Pet Supplies</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Garden & Outdoor</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Bathroom</a></li>
+              <li><a href="./views/category.html" class="sub-menu-item">Family Entertainment</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
 
   <section class="tab-content">
@@ -274,7 +357,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product__overlay">
+                <div class="product-overlay">
                   <button type="button" class="btn btn-light">Add to Wishlist</button>
                   <button type="button" class="btn btn-light">Quick View</button>
                   <button type="button" class="btn btn-light">Dislike it</button>
@@ -433,7 +516,6 @@
           </div>
           <div class="side-img">
             <img src="./images/chic/plus-size-dress.jpg" alt="Plus Size">
-            <!-- <p>Plus Size Dresses</p> -->
           </div>
 
           <div class="side-img">
@@ -476,7 +558,7 @@
                   </div>
                 </div>
               </div>
-              <div class="product__overlay">
+              <div class="product-overlay">
                 <button type="button" class="btn btn-light">Add to Wishlist</button>
                 <button type="button" class="btn btn-light">Quick View</button>
                 <button type="button" class="btn btn-light">Dislike it</button>
@@ -778,7 +860,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product__overlay">
+                <div class="product-overlay">
                   <button type="button" class="btn btn-light">Add to Wishlist</button>
                   <button type="button" class="btn btn-light">Quick View</button>
                   <button type="button" class="btn btn-light">Dislike it</button>

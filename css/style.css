@@ -28,10 +28,6 @@ header .container {
   font-weight: 300
 }
 
-.nav-links>.fa-times {
-  float: right
-}
-
 .header .f-nav ul {
   border-bottom: 1px solid #f4f4f4
 }
@@ -41,11 +37,185 @@ header .container {
   font-size: .8rem
 }
 
+.bars {
+  transform: translateY(3px);
+  margin-right: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.backdrop--active {
+  display: block;
+}
+
+.homesidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 18rem;
+  height: 100%;
+  overflow-y: auto;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  background-color: rgb(51, 51, 51, 0.8);
+  backdrop-filter: blur(15px);
+  transform: translateX(-100%);
+}
+
+.sidebar-active {
+  transform: translateX(0);
+}
+
+.sidebar-logo {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(2, 2, 2, 0.1);
+}
+
+.sidebar-logo img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.sidebar-list,
+.sub-menu {
+  list-style: none;
+  border-radius: 5px;
+}
+
+.sidebar-item {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar-item a {
+  text-decoration: none;
+  color: var(--color-gray-light);
+  display: flex;
+  align-items: center;
+  line-height: 2rem;
+}
+
+.sidebar-item i {
+  margin-right: 0.5rem;
+}
+
+.sidebar-item a .dropdown {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin: 1.2rem;
+  transition: 0.35s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.sub-menu {
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.75rem;
+  display: none;
+}
+
+.sub-menu a {
+  padding-left: 2rem;
+}
+
+.sidebar-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 2px;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: height 0.5s 0.4s, width 0.5s;
+  z-index: -1;
+}
+
+.sidebar-item:hover::after {
+  transition: height 0.5s 0.1s, width 0.5s 0.4s;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar-item:hover {
+  color: #333;
+}
+
+.homesidebar {
+  overflow-y: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch
+}
+
+.homesidebar ul li a.white {
+  color: var(--color-gray-light);
+}
+
+.homesidebar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px
+}
+
+.homesidebar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), #ff165e);
+  border-radius: 10px
+}
+
+.homesidebar::-webkit-scrollbar-track {
+  background: var(--color-gray-default);
+}
+
+.nav-links {
+  /* display: inline-block; */
+  position: fixed;
+  background: var(--color-gray-light);
+  height: 100vh;
+  width: 320px;
+  left: -320px;
+  top: 0;
+  /* z-index: 2; */
+  overflow-x: hidden;
+  transition: 0.3s
+}
+
+.nav-links .container {
+  background: var(--color-gray-light);
+}
+
+.open {
+  left: 0;
+}
+
 .nav-links ul li,
 .top-head ul li {
   width: 100%;
   cursor: pointer;
+  padding: 0 0.8rem;
   position: relative
+}
+
+.nav-links ul li a {
+  display: block;
+  padding: 0.5rem;
 }
 
 .nav-links ul li::after,
@@ -92,15 +262,21 @@ header .container {
 }
 
 .banner-women {
-  background-image: url(../images/banner.jpg)
+  background-image: url(../images/banner.jpg);
+  background-image: -webkit-image-set('../images/banner.jpg', type('image/jpg'));
+  background-image: image-set('../images/banner.jpg', type('image/jpg'));
 }
 
 .banner-curvy {
-  background-image: url(../images/chic/banner-curvy.jpg)
+  background-image: url(../images/chic/banner-curvy.jpg);
+  background-image: -webkit-image-set('../images/chic/banner-curvy.jpg', type('image/jpg'));
+  background-image: image-set('../images/chic/banner-curvy.jpg', type('image/jpg'));
 }
 
 .banner-men {
-  background-image: url(../images/chic/banner-men.jpg)
+  background-image: url(../images/chic/banner-men.jpg);
+  background-image: -webkit-image-set('../images/chic/banner-men.jpg', type('image/jpg'));
+  background-image: image-set('../images/chic/banner-men.jpg', type('image/jpg'));
 }
 
 nav .fa {
@@ -164,28 +340,6 @@ main .container {
   background-color: var(--error-color)
 }
 
-.nav-links {
-  position: absolute;
-  background: var(--light-color);
-  height: 100vh;
-  width: 320px;
-  top: 0;
-  left: -320px;
-  padding: 10px;
-  transition: 1s
-}
-
-.open {
-  left: 0
-}
-
-nav .fa {
-  display: inline-block;
-  color: #333;
-  margin: 10px;
-  cursor: pointer
-}
-
 .promo-off {
   background-color: #333;
   color: #fff
@@ -225,6 +379,8 @@ nav .fa {
 .new-arrival {
   width: 100%;
   background-image: url(../images/bg.jpg);
+  background-image: -webkit-image-set('../images/bg.jpg', type('image/jpg'));
+  background-image: image-set('../images/bg.jpg', type('image/jpg'));
   background-position: center;
   background-size: cover;
   padding: 5px;
@@ -298,19 +454,27 @@ nav .fa {
 }
 
 .summer-women {
-  background: url(../images/chic/summer.jpg)
+  background-image: url(../images/chic/summer.jpg);
+  background-image: -webkit-image-set('../images/chic/summer.jpg', type('image/jpg'));
+  background-image: image-set('../images/chic/summer.jpg', type('image/jpg'));
 }
 
 .summer-women-c {
-  background: url(../images/chic/summer1.jpg)
+  background-image: url(../images/chic/summer1.jpg);
+  background-image: -webkit-image-set('../images/chic/summer1.jpg', type('image/jpg'));
+  background-image: image-set('../images/chic/summer1.jpg', type('image/jpg'));
 }
 
 .summer-men {
-  background: url(../images/chic/summer3.png)
+  background-image: url(../images/chic/summer3.png);
+  background-image: -webkit-image-set('../images/chic/summer3.png', type('image/jpg'));
+  background-image: image-set('../images/chic/summer3.png', type('image/jpg'));
 }
 
 .summer-men-c {
-  background: url(../images/chic/summer4.png)
+  background-image: url(../images/chic/summer4.png);
+  background-image: -webkit-image-set('../images/chic/summer4.png', type('image/jpg'));
+  background-image: image-set('../images/chic/summer4.png', type('image/jpg'));
 }
 
 .summer {
@@ -483,6 +647,8 @@ nav .fa {
   padding: .8rem 0;
   min-height: 1.44rem;
   background: url(../images/chic/new-user-coupon.png);
+  background-image: -webkit-image-set('../images/chic/new-user-coupon.png', type('image/png'));
+  background-image: image-set('../images/chic/new-user-coupon.png', type('image/png'));
   background-size: auto;
   background-size: 100% 100%;
   color: #fff;
@@ -793,7 +959,7 @@ nav .fa {
   z-index: 2
 }
 
-.product__overlay {
+.product-overlay {
   width: 100%;
   height: 100%;
   display: flex;
@@ -808,7 +974,7 @@ nav .fa {
   transition: opacity .25s ease-in
 }
 
-.product__overlay .btn {
+.product-overlay .btn {
   width: 80%;
   border-radius: 50px;
   margin: 0 2rem .8rem;
@@ -817,11 +983,11 @@ nav .fa {
   box-shadow: none
 }
 
-.product__overlay .btn a {
+.product-overlay .btn a {
   display: block
 }
 
-.product__overlay .similar {
+.product-overlay .similar {
   width: 100%;
   text-align: center;
   padding: 4px;
@@ -832,7 +998,7 @@ nav .fa {
   background: rgba(0, 0, 0, .3)
 }
 
-.product__overlay:hover {
+.product-overlay:hover {
   opacity: 1
 }
 
@@ -993,6 +1159,8 @@ nav .fa {
   width: 100%;
   height: 40vh;
   background-image: url(../images/chic/account-bg.png);
+  background-image: -webkit-image-set('../images/chic/account-bg.png', type('image/png'));
+  background-image: image-set('../images/chic/account-bg.png', type('image/png'));
   background-position: top center;
   background-size: 100% 100%;
   margin-bottom: 3rem;
@@ -1526,7 +1694,7 @@ footer {
 }
 
 footer .container {
-  padding: .8rem 3rem
+  padding: .25rem 3rem
 }
 
 footer .container .flex {
@@ -1536,7 +1704,7 @@ footer .container .flex {
 }
 
 footer .container .flex p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .text-danger {
@@ -1559,8 +1727,7 @@ footer .active {
   padding: .2rem .5rem;
   margin: 0 0.1rem;
   z-index: 1;
-  color: var(--light-color);
-  background: #666666;
+  color: var(--color-gray-darker);
 }
 
 .footer-detail .container .flex span {
@@ -1571,6 +1738,7 @@ footer .active {
   position: absolute;
   top: -9px;
   left: 33%;
+  color: #fff;
   background: var(--error-color);
 }
 
@@ -1665,7 +1833,7 @@ footer .active {
 
 .product-option-wrap {
   width: 100%;
-  padding: 10px;
+  padding: 0.8rem;
   background: #fff;
   position: fixed;
   left: 0;
