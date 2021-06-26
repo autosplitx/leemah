@@ -22,9 +22,8 @@ header .container {
 
 .top-head .flex {
   justify-content: space-around;
-  align-items: flex-start;
-  padding: 0 .5rem;
-  font-size: .9rem;
+  align-items: center;
+  font-size: 0.9rem;
   font-weight: 300
 }
 
@@ -34,7 +33,8 @@ header .container {
 
 .header .f-nav ul li {
   width: auto;
-  font-size: .8rem
+  font-size: .8rem;
+  padding: 0.5rem;
 }
 
 .bars {
