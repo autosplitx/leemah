@@ -23,7 +23,7 @@ header .container {
 .top-head .flex {
   justify-content: space-around;
   align-items: flex-start;
-  padding: .5rem .5rem 0;
+  padding: 0 .5rem;
   font-size: .9rem;
   font-weight: 300
 }
@@ -38,6 +38,7 @@ header .container {
 }
 
 .bars {
+  border-radius: 5;
   transform: translateY(3px);
   margin-right: 1rem;
   cursor: pointer;
@@ -90,6 +91,10 @@ header .container {
   border-radius: 5px;
 }
 
+.sidebar-list {
+  padding-top: 2.5rem;
+}
+
 .sidebar-list,
 .sub-menu {
   list-style: none;
@@ -97,10 +102,14 @@ header .container {
 }
 
 .sidebar-item {
-  padding: 0.5rem 1.5rem;
+  padding: 0.15rem 1.5rem;
   font-size: 0.8rem;
   position: relative;
   overflow: hidden;
+}
+
+.sidebar-list:last-child {
+  margin-bottom: 3rem;
 }
 
 .sidebar-item a {
@@ -143,7 +152,7 @@ header .container {
   top: 0;
   left: 0;
   height: 0;
-  width: 2px;
+  width: 5px;
   background-color: rgba(0, 0, 0, 0.4);
   transition: height 0.5s 0.4s, width 0.5s;
   z-index: -1;
@@ -167,6 +176,8 @@ header .container {
 }
 
 .homesidebar ul li a.white {
+  display: block;
+  padding: 0.5rem 0.8rem;
   color: var(--color-gray-light);
 }
 
@@ -184,15 +195,118 @@ header .container {
   background: var(--color-gray-default);
 }
 
+.divider {
+  padding: 0;
+  height: 1px;
+  background: linear-gradient(to right, #f4cecd, #ff165e, #f4cecd);
+}
+
+.ease {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.sidebar-tabs {
+  position: relative;
+  color: var(--color-gray-light);
+}
+
+.sidebar-tabs>input,
+.sidebar-tabs>span {
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+}
+
+.sidebar-tabs>input {
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+.sidebar-tabs>span {
+  font-size: 0.8rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sidebar-tabs>span i,
+.sidebar-tabs>span {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.sidebar-tabs>input:hover+span {
+  background: rgba(255, 255, 255, .1);
+}
+
+.sidebar-tabs>input:checked+span {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-tabs>input:checked+span,
+.sidebar-tabs>input:hover+span {
+  color: var(--color-gray-light);
+}
+
+#tab-w,
+#tab-w+span {
+  left: 0;
+}
+
+#tab-m,
+#tab-m+span {
+  left: 50%;
+}
+
+.sidebar-tab-content {
+  width: 100%;
+}
+
+.sidebar-tab-content section {
+  width: 100%;
+  display: none;
+}
+
+#tab-w:checked~.sidebar-tab-content #tab-item-w {
+  display: block;
+}
+
+#tab-m:checked~.sidebar-tab-content #tab-item-m {
+  display: block;
+}
+
+.effect-homesidebar .line {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), #ff165e, rgba(0, 0, 0, 0.1));
+  width: 50%;
+  height: 4px;
+  position: absolute;
+  top: 1.7rem;
+}
+
+#tab-w:checked~.line {
+  left: 0;
+}
+
+#tab-m:checked~.line {
+  left: 50%;
+}
+
 .nav-links {
-  /* display: inline-block; */
   position: fixed;
   background: var(--color-gray-light);
   height: 100vh;
   width: 320px;
   left: -320px;
   top: 0;
-  /* z-index: 2; */
   overflow-x: hidden;
   transition: 0.3s
 }
@@ -209,7 +323,7 @@ header .container {
 .top-head ul li {
   width: 100%;
   cursor: pointer;
-  padding: 0 0.8rem;
+  padding: 0 0.8rem 0.3rem;
   position: relative
 }
 
