@@ -68,7 +68,7 @@
 						<i class="fa fa-angle-down"></i>
 						<i class="fa fa-angle-up"></i>
 					</li>
-					<li class="closed">
+					<li class="bars">
 						Filter
 						<i class="fa fa-filter"></i>
 					</li>
@@ -76,19 +76,483 @@
 			</div>
 		</div>
 
-		<nav>
-			<div class="filter-links" id="filterLinks">
-				<div class="filter-content">
-					<div class="filter-head">
-						<p><i class="fa fa-times closed"></i></p>
-						<p>Filter</p>
-					</div>
-					<div class="container side-bar">
-						<h1>Welcome to Filter</h1>
+		<div class="backdrop"></div>
+
+		<div class="homesidebar styleside">
+			<div class="sidebar-logo">
+				Filters
+			</div>
+
+			<div class="divider"></div>
+
+			<div class="sidebar-list style">
+				<div class="flex">
+					<label for="ship-in">Ship in 24 hours</label>
+					<input type="checkbox" id="ship-in">
+				</div>
+				<div class="flex">
+					<label for="in-sale">Sale</label>
+					<input type="checkbox" id="in-sale">
+				</div>
+				<div class="flex">
+					<h3>Price</h3>
+					<div>
+						<input type="number" placeholder="Min"> &dash; <input type="number" placeholder="Max">
 					</div>
 				</div>
+				<ul>
+					<li class="sidebar-item">
+						<a href="#!" class="sub-btn"><i class="fa fa-tshirt"></i>Color
+							<i class="fa fa-chevron-right dropdown"></i></a>
+						<div class="sub-menu">
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/brown.png" alt="Brown"><span>Brown</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/blue.png" alt="Blue"><span>Blue</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/khaki.png" alt="Khaki"><span>Khaki</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/red.png" alt="Red"><span>Red</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/green.png" alt="Green"><span>Green</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/black.png" alt="Black"><span>Black</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/gray.png" alt="Gray"><span>Gray</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/beige.png" alt="Beige"><span>Beige</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/pink.png" alt="Pink"><span>Pink</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/silver.png" alt="Silver"><span>Silver</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/white.png" alt="White"><span>White</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/purple.png" alt="Purple"><span>Purple</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/gold.png" alt="Gold"><span>Gold</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/orange.png" alt="Orange"><span>Orange</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/rainbow.png" alt="Rainbow"><span>Rainbow</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<img src="../images/chic/yellow.png" alt="Yellow"><span>Yellow</span>
+							</a>
+
+
+						</div>
+					</li>
+					<li class="sidebar-item">
+						<a href="#!" class="sub-btn"><i class="fa fa-stroopwafel"></i>Size
+							<i class="fa fa-chevron-right dropdown"></i></a>
+						<div class="sub-menu">
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 4</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 5</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 6</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 7</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 8</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 9</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 10</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 11</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 12</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 14</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 16</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US XL</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 2XL</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 3XL</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 4XL</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>US 5XL</span>
+							</a>
+						</div>
+					</li>
+					<li class="sidebar-item">
+						<a href="#!" class="sub-btn"><i class="fa fa-shoe-prints"></i>Material
+							<i class="fa fa-chevron-right dropdown"></i></a>
+						<div class="sub-menu">
+							<a href="javascript:void(0)" class="taggable">
+								<span>Cotton</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Velvet</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Linen</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Rayon</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Nylon</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Polyester</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Viscose</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Spandex</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Corduroy</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Chiffon</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Blended Cotton</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Silk</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Mesh</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Modal</span>
+							</a>
+						</div>
+					</li>
+					<li class="sidebar-item">
+						<a href="#!" class="sub-btn"><i class="fa fa-shopping-bag"></i>Pattern
+							<i class="fa fa-chevron-right dropdown"></i></a>
+						<div class="sub-menu">
+							<a href="javascript:void(0)" class="taggable">
+								<span>Cat</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Cartoon</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Floral</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Striped</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Color Block</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Art Illustration</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Plaid</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Letter</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Leopard</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Stars</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Feather</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Fish</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Plant</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Dot</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Tie-dye</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Galaxy</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Calico</span>
+							</a>
+						</div>
+					</li>
+					<li class="sidebar-item">
+						<a href="#!" class="sub-btn"><i class="fa fa-spa"></i>Occasion
+							<i class="fa fa-chevron-right dropdown"></i></a>
+						<div class="sub-menu">
+							<a href="javascript:void(0)" class="taggable">
+								<span>Outdoor</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Cosplay</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Sport</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Party</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Shopping</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Formal</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Casual</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Versatile</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Home</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Date</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Daily</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Holiday</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Running</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Beach</span>
+							</a>
+						</div>
+					</li>
+					<li class="sidebar-item">
+						<a href="#!" class="sub-btn"><i class="fa fa-child"></i>Style
+							<i class="fa fa-chevron-right dropdown"></i></a>
+						<div class="sub-menu">
+							<a href="javascript:void(0)" class="taggable">
+								<span>Casual</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Vintage</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Elegant</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Fashion</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Young Leemah</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Stylish</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Bohemia</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Business</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Formal</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Sexy</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Brief</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Classic</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Sweet/Cute</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Retro</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Hawaiian Style</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Ethnic</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>European Style</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Natural</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Ins</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Country Style</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Lovely</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Funny</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Sport/Active</span>
+							</a>
+						</div>
+					</li>
+					<li class="sidebar-item">
+						<a href="#!" class="sub-btn"><i class="fa fa-tree"></i>Sleeves Length
+							<i class="fa fa-chevron-right dropdown"></i></a>
+						<div class="sub-menu">
+							<a href="javascript:void(0)" class="taggable">
+								<span>Long Sleeve</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Short Sleeve</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>3/4 Length Sleeve</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Half Sleeve</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Sleeveless</span>
+							</a>
+						</div>
+					</li>
+					<li class="sidebar-item">
+						<a href="#!" class="sub-btn"><i class="fa fa-child"></i>Collar
+							<i class="fa fa-chevron-right dropdown"></i></a>
+						<div class="sub-menu">
+							<a href="javascript:void(0)" class="taggable">
+								<span>O-neck</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>V-neck</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Hooded</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Stand Collar</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Lapel Collar</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Others</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Half Open Collar</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Double-Layer</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Slash Neck</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Ruffled</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Crew Neck</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>High Neck</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Square Collar/span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Half-collar</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Polo</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Off Shoulder</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Asymmetrical</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Turtleneck</span>
+							</a>
+						</div>
+					</li>
+					<li class="sidebar-item">
+						<a href="#!" class="sub-btn"><i class="fa fa-child"></i>Season
+							<i class="fa fa-chevron-right dropdown"></i></a>
+						<div class="sub-menu">
+							<a href="javascript:void(0)" class="taggable">
+								<span>Winter</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Autumn</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Spring</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Summer</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Fall & Winter</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Spring & Summer</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>Spring & Fall</span>
+							</a>
+							<a href="javascript:void(0)" class="taggable">
+								<span>All Season</span>
+							</a>
+						</div>
+					</li>
+				</ul>
 			</div>
-		</nav>
+		</div>
 	</header>
 
 	<main>
@@ -270,7 +734,7 @@
 	</main>
 
 	<a href="#back-to-top" class="back-to-top flex"><i class="fa fa-hand-point-up"></i></a>
-	
+
 	<!-- <section class="tab-content container">
 			<h1>Welcome to Category</h1>
 		</section> -->
