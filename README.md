@@ -12,3 +12,7 @@ It should be noted that there is no CSS or javaScript library used in the develo
 but it will be upgraded in the nearest future using VueJs, Tailwind CSS 
 and probably use Laravel for it backend (API).
 
+Below is the link for visual preview!
+https://leemah.netlify.app
+
+
