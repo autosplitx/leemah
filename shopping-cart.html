@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Adegoke's Portfolio" />
+  <meta name="keywords" content="Adegoke, Portfolio, Resume" />
+  <meta name="author" content="Adegoke Abdulghafar Adewuyi" />
+  <link rel="shortcut icon" href="./images/chic/favicon.jpeg" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="apple-touch-icon" href="./images/chic/favicon.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <link rel="stylesheet" href="./css/utility.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>Leemah | Home</title>
+</head>
+
+<body style="padding-top: 0">
+  <a id="back-to-top"></a>
+
+  <div class="shopping-cart-header">
+    <div class="checkout-nav">
+      <div class="nav-left">
+        <div class="logo">
+          <a href="./index.html"><img src="./images/chic/logo.jpg" alt="Leemah Logo"></a>
+        </div>
+        <p><i class="fa fa-check-circle"></i> Secure Checkout</p>
+      </div>
+      <div class="nav-right">
+        <a href="./shop.html">Continue Shopping <i class="fa fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-line">
+    <div class="progress-line-item flex checked">
+      <p><i class="fa fa-shopping-bag"></i> Shopping Bag</p>
+      <span></span>
+    </div>
+    <div class="progress-line-item flex">
+      <p><i class="fa fa-file-alt" aria-hidden="true"></i> Place Order</p>
+      <span></span>
+    </div>
+    <div class="progress-line-item flex">
+      <p><i class="fa fa-money-check"></i> Pay</p>
+      <span></span>
+    </div>
+    <div class="progress-line-item flex">
+      <p><i class="fa fa-clipboard-check"></i> Order Complete</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="shopping-cart-content">
+      <section class="main-cart">
+        <div class="bg-danger-light">
+          <h4 class="bold"><i class="fa fa-cart-plus"></i> Add-on item</h4>
+          <p>Order over ₦43.83 to enjoy Add-on price. Details</p>
+        </div>
+
+        <div class="shopping-cart-list">
+          <h1 class="bold my-1">Shopping Bag <span>( 2 Items )</span></h1>
+
+          <div class="product-price">
+            <div class="deals fs-sm">
+              <p><i class="fa fa-bolt fs-sm bolt"></i>Flash Deals</p>
+              <div class="count-down text-danger">
+                <i class="fa fa-clock"></i>
+                <strong id="days"></strong> : <strong id="hours"></strong> :
+                <strong id="mins"></strong> :
+                <strong id="secs"></strong>
+                <h2 id="end"></h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-list fs-sm">
+            <div class="cart-list-head">
+              <div class="grid text-center">
+                <h5 class="faded">Item</h5>
+                <h5 class="faded">Unit Price</h5>
+                <h5 class="faded">Qty</h5>
+                <h5 class="faded">Subtotal</h5>
+              </div>
+            </div>
+
+            <div class="cart-list-body grid">
+
+              <div class="list-body-item flex">
+                <input type="checkbox" name="mark" id="mark">
+                <a href="./detail.html"><img src="./images/chic/pdt0-img.png" alt="Product Image"></a>
+                <div class="body-item-info">
+                  <a href="./shop.html" class="faded">Mens Embroidery Tricolor Knitted Texture Short Sleeve T-Shirt</a>
+
+                  <div class="shopping-cart-edit qwerty my-1">
+                    <button class="btn btn-sm btn-outline bold ">Black, US M <i class="fa fa-chevron-down"></i></button>
+
+                    <div class="list-body-edit shadow">
+                      <img src="./images/chic/pdt0-img.png" alt="Product Image">
+
+                      <div class="list-body-edit-attribute">
+                        <div class="edit-attribute-color">
+                          <p class="faded">Color:</p>
+                          <button class="btn btn-sm btn-outline active">Black</button>
+                          <button class="btn btn-sm btn-outline">Whine Red</button>
+                          <button class="btn btn-sm btn-outline">Coffee</button>
+                        </div>
+                        <div class="edit-attribute-size my-1">
+                          <p class="faded">Size:</p>
+                          <button class="btn btn-sm btn-outline">US S</button>
+                          <button class="btn btn-sm btn-outline active">US M</button>
+                          <button class="btn btn-sm btn-outline">US L</button>
+                          <button class="btn btn-sm btn-outline">US XL</button>
+                          <button class="btn btn-sm btn-outline">US 2XL</button>
+                        </div>
+                        <div class="edit-attribute-action">
+                          <button class="btn btn-sm btn-outline btn-danger">Submit</button>
+                          <button class="btn btn-sm btn-outline cancel">Cancel</button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="item-info-action">
+                    <a href="#!" class="faded">Delete</a>
+                    <a href="#!" class="faded">Save in whishlist</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-body-item text-center">
+                <p>₦ 20.34</p>
+              </div>
+
+              <div class="list-body-item text-center flex justify-content-evenly">
+                <span>&minus;</span>
+                <input type="number" value="1">
+                <span>&plus;</span>
+              </div>
+
+              <div class="list-body-item text-center bold">
+                <p>₦ 20.34</p>
+              </div>
+            </div>
+
+            <div class="cart-list-body grid">
+
+              <div class="list-body-item flex">
+                <input type="checkbox" name="mark" id="mark">
+                <a href="./detail.html"><img src="./images/chic/wallet.png" alt="Product Image"></a>
+                <div class="body-item-info">
+                  <a href="./shop.html" class="faded">Mens Embroidery Tricolor Knitted Texture Short Sleeve T-Shirt</a>
+
+                  <div class="shopping-cart-edit qwerty my-1">
+                    <button class="btn btn-sm btn-outline bold ">Black, US M <i class="fa fa-chevron-down"></i></button>
+
+                    <div class="list-body-edit shadow">
+                      <img src="./images/chic/wallet.png" alt="Product Image">
+
+                      <div class="list-body-edit-attribute">
+                        <div class="edit-attribute-color">
+                          <p class="faded">Color:</p>
+                          <button class="btn btn-sm btn-outline active">Black</button>
+                          <button class="btn btn-sm btn-outline">Whine Red</button>
+                          <button class="btn btn-sm btn-outline">Coffee</button>
+                        </div>
+                        <div class="edit-attribute-size my-1">
+                          <p class="faded">Size:</p>
+                          <button class="btn btn-sm btn-outline">US S</button>
+                          <button class="btn btn-sm btn-outline active">US M</button>
+                          <button class="btn btn-sm btn-outline">US L</button>
+                          <button class="btn btn-sm btn-outline">US XL</button>
+                          <button class="btn btn-sm btn-outline">US 2XL</button>
+                        </div>
+                        <div class="edit-attribute-action">
+                          <button class="btn btn-sm btn-outline btn-danger">Submit</button>
+                          <button class="btn btn-sm btn-outline cancel">Cancel</button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="item-info-action">
+                    <a href="#!" class="faded">Delete</a>
+                    <a href="#!" class="faded">Save in whishlist</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-body-item text-center">
+                <p>₦ 20.34</p>
+              </div>
+
+              <div class="list-body-item text-center flex justify-content-evenly">
+                <span>&minus;</span>
+                <input type="number" value="1">
+                <span>&plus;</span>
+              </div>
+
+              <div class="list-body-item text-center bold">
+                <p>₦ 20.34</p>
+              </div>
+            </div>
+
+            <div class="cart-list-footer flex justify-content-start my-1 py-1">
+              <input type="checkbox" name="mark" id="all">
+              <label for="all">Select all</label>
+
+              <a href="#!" class="faded">Delete selected items</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cart-summary">
+        <h1 class="bold">Order Summary</h1>
+        <div class="cart-summary-wrap bg-light fs-sm">
+          <div class="flex justify-content-start">
+            <input type="radio" name="discount" id="coupon">
+            <label for="coupon">Coupon discount</label>
+          </div>
+
+          <div class="apply-coupon flex">
+            <input type="text">
+            <button class="btn btn-sm btn-dark">Apply</button>
+          </div>
+
+          <div class="flex justify-content-start">
+            <input type="radio" name="discount" id="discount">
+            <label for="discount">Do not use any discount</label>
+          </div>
+
+          <div class="summary-subtotal">
+            <div class="flex justify-content-between">
+              <p>Subtotal :</p>
+              <h4 class="bold">₦ 40.64</h4>
+            </div>
+
+            <div class="summary-total flex justify-content-between">
+              <h1 class="bold">Total :</h1>
+              <h1 class="bold fs-md text-danger">₦ 40.64</h1>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-danger my-1 bold checkout">Proceed to checkout</button>
+
+        <ul class="fs-sm">
+          <li>Safety and various payment methods</li>
+          <li>Faster, Professional dispute resolution</li>
+        </ul>
+
+      </section>
+    </div>
+
+    <div class="shopping-cart-content">
+      <div>
+        <section class="recent-viewed my-2">
+          <h1 class="my-2 py-1 bold">Your recent viewed items</h1>
+
+          <div class="carousel js-flickity" data-flickity='{"groupCells": true }'>
+            <div class="carousel-cell">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./images/chic/p9.jpg" alt="Bags">
+                  <a href="./detail.html" class="btn btn-light cart-btn"><i class="fa fa-shopping-cart"></i> Quick
+                    View</a>
+                </div>
+                <div class="product-info text-center">
+                  <h5><span>₦40.43</span></h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./images/chic/p12.jpeg" alt="">
+                  <a href="./detail.html" class="btn btn-light cart-btn"><i class="fa fa-shopping-cart"></i> Quick
+                    View</a>
+                </div>
+                <div class="product-info text-center">
+                  <h5><span>₦40.43</span></h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./images/chic/p11.jpg" alt="">
+                  <a href="./detail.html" class="btn btn-light cart-btn"><i class="fa fa-shopping-cart"></i> Quick
+                    View</a>
+                </div>
+                <div class="product-info text-center">
+                  <h5><span>₦40.43</span></h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./images/chic/p10.jpeg" alt="Bags">
+                  <a href="./detail.html" class="btn btn-light cart-btn"><i class="fa fa-shopping-cart"></i> Quick
+                    View</a>
+                </div>
+                <div class="product-info text-center">
+                  <h5><span>₦40.43</span></h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./images/chic/p15.jpg" alt="Bags">
+                  <a href="./detail.html" class="btn btn-light cart-btn"><i class="fa fa-shopping-cart"></i> Quick
+                    View</a>
+                </div>
+                <div class="product-info text-center">
+                  <h5><span>₦40.43</span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="recent-viewed my-2">
+          <h1 class="my-2 py-1 bold">You Might Also Like</h1>
+
+          <div class="carousel js-flickity" data-flickity='{"groupCells": true }'>
+            <div class="carousel-cell">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./images/chic/w-bag1.png" alt="Bags">
+                  <a href="./detail.html" class="btn btn-light cart-btn"><i class="fa fa-shopping-cart"></i> Quick
+                    View</a>
+                </div>
+                <div class="product-info text-center">
+                  <h5><span>₦40.43</span></h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./images/chic/shoe4.png" alt="">
+                  <a href="./detail.html" class="btn btn-light cart-btn"><i class="fa fa-shopping-cart"></i> Quick
+                    View</a>
+                </div>
+                <div class="product-info text-center">
+                  <h5><span>₦40.43</span></h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./images/chic/pdt2-img.png" alt="">
+                  <a href="./detail.html" class="btn btn-light cart-btn"><i class="fa fa-shopping-cart"></i> Quick
+                    View</a>
+                </div>
+                <div class="product-info text-center">
+                  <h5><span>₦40.43</span></h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./images/chic/p13.jpg" alt="Bags">
+                  <a href="./detail.html" class="btn btn-light cart-btn"><i class="fa fa-shopping-cart"></i> Quick
+                    View</a>
+                </div>
+                <div class="product-info text-center">
+                  <h5><span>₦40.43</span></h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="./images/chic/w-bag2.png" alt="Bags">
+                  <a href="./detail.html" class="btn btn-light cart-btn"><i class="fa fa-shopping-cart"></i> Quick
+                    View</a>
+                </div>
+                <div class="product-info text-center">
+                  <h5><span>₦40.43</span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <a href="#back-to-top" class="back-to-top flex"><i class="fa fa-hand-point-up"></i></a>
+
+  <footer>
+    <section class="footer_section">
+      <div class="container">
+        <div class="grid grid-4 bg-light">
+          <div class="text-center my-2">
+            <i class="fa fa-gem fa-2x"></i>
+            <h3 class="text-center">High-quality Goods</h3>
+            <p>Enjoy top quality <br> items for less</p>
+          </div>
+          <div class="text-center my-2">
+            <i class="fa fa-headset fa-2x"></i>
+            <h3 class="text-center">24/7 Livechat</h3>
+            <p>Get instant assistance <br> whenever you need it</p>
+          </div>
+          <div class="text-center my-2">
+            <i class="fa fa-bus fa-2x"></i>
+            <h3 class="text-center">Express Shipping</h3>
+            <p>Fast & reliable <br> delivery options</p>
+          </div>
+          <div class="text-center my-2">
+            <i class="fa fa-credit-card fa-2x"></i>
+            <h3 class="text-center">Secure Payment</h3>
+            <p>Multiple safe payment <br> methods</p>
+          </div>
+        </div>
+
+        <div class="grid foot my-3">
+          <div class="company-info">
+            <h1>Company Information</h1>
+            <ul>
+              <li><a href="#!" class="footer-link">About Leemahshop</a></li>
+              <li><a href="#!" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#!" class="footer-link">Return Policy</a></li>
+              <li><a href="#!" class="footer-link">Terms And Conditions</a></li>
+              <li><a href="#!" class="footer-link">Intellectual Property Claims</a></li>
+            </ul>
+          </div>
+          <div class="customer-service">
+            <h1>Customer Service</h1>
+            <ul>
+              <li><a href="#!" class="footer-link">Track Order</a></li>
+              <li><a href="#!" class="footer-link">Shipping FAQ</a></li>
+              <li><a href="#!" class="footer-link">Order FAQ</a></li>
+              <li><a href="#!" class="footer-link">Shipping Methods</a></li>
+              <li><a href="#!" class="footer-link">Payment Methods</a></li>
+              <li><a href="#!" class="footer-link">Top Searches</a></li>
+            </ul>
+          </div>
+          <div class="cooperation">
+            <h1>Cooperation</h1>
+            <ul>
+              <li><a href="#!" class="footer-link">Blogger Program</a></li>
+              <li><a href="#!" class="footer-link">Affiliate - Make Money</a></li>
+              <li><a href="#!" class="footer-link">VIP Program</a></li>
+              <li><a href="#!" class="footer-link">Dropship Program</a></li>
+              <li><a href="#!" class="footer-link">Wholesale Program</a></li>
+              <li><a href="#!" class="footer-link">Student Program</a></li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <div class="search">
+              <input type="search" placeholder="Subscribe and get 15% off coupon" />
+              <a href="#!"><i>&rightarrow;</i></a>
+            </div>
+            <p>When you subscribe, it means you agree received email. Please read our
+              <a href="#!" class="footer-link">Privacy Policy</a>
+            </p>
+
+            <div class="social-icon py-1">
+              <a href="#!"><i class="fab fa-facebook-f"></i></a>
+              <a href="#!"><i class="fab fa-instagram"></i></a>
+              <a href="#!"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-center copyright">Copyright © 2014-2021 Leemashop.com All Rights Reserved.</p>
+    </section>
+  </footer>
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="./js/script.min.js"></script>
+  <script src="./js/countdown.min.js"></script>
+
+</body>
+
+</html>
